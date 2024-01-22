@@ -1,0 +1,988 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #000;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/*
+    SIDEBAR STYLE
+*/
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #1b1d4d;/* sidebar color 7386D5*/
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #1b1d4d;/* sidebar color 7386D5 */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #1b1d4d;
+    color: #1b1d4d; /* sidebar color 7386D5 */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #1b1d4d; /* 6d7fcc */
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+   
+}
+
+#sidebar ul li a:hover {
+    color: #1b1d4d; /*7386D5*/
+    background: #fff;
+}
+
+#sidebar .dropdown-menu{
+    width: 95%;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.article,
+a.article:hover {
+    background: #1b1d4d !important; /*6d7fcc*/
+    color: #fff !important;
+}
+
+/*
+    CONTENT STYLE
+*/
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sidebarCollapse span{
+    color: #fff;
+}
+
+#sidebarCollapse i{
+    color: #fff;
+}
+
+/* Nav */
+.navbar-nav {
+    justify-content: end;
+    width:100%;
+}
+
+
+//
+
+
+
+
+.group-1-URb {
+  height: 102.4rem;
+  width: 100%;
+
+  .wireframe-1-H89 {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 8.6rem;
+    position: relative;
+    width: 100%;
+
+    .auto-group-9bcy-xVB {
+      flex-shrink: 0;
+      height: 100%;
+      margin-right: 7.9rem;
+      position: relative;
+      width: 29.1rem;
+
+      .rectangle-1-Twj {
+        background-color: #1b1d4c;
+        height: 102.4rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 0;
+        width: 29rem;
+      }
+      .line-1-S2y {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 20.5rem;
+        width: 29rem;
+      }
+      .line-2-k3f {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 30.9rem;
+        width: 29rem;
+      }
+      .line-3-Fm7 {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 41.3rem;
+        width: 29rem;
+      }
+      .item--yBK {
+        color: #f5f5f5;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        height: 2.2rem;
+        left: 1.7rem;
+        line-height: 1.0875;
+        position: absolute;
+        top: 24.5rem;
+        white-space: nowrap;
+        width: 19.9rem;
+      }
+      .item--vkm {
+        color: #f5f5f5;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        height: 2.2rem;
+        left: 1.7rem;
+        line-height: 1.0875;
+        position: absolute;
+        top: 34.9rem;
+        white-space: nowrap;
+        width: 19.7rem;
+      }
+      .line-4-BAu {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0;
+        position: absolute;
+        top: 51.7rem;
+        width: 29rem;
+      }
+      .item--JFX {
+        color: #f5f5f5;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        height: 2.2rem;
+        left: 1.7rem;
+        line-height: 1.0875;
+        position: absolute;
+        top: 45.3rem;
+        white-space: nowrap;
+        width: 22.8rem;
+      }
+    }
+    .auto-group-8bsb-Lxu {
+      flex-shrink: 0;
+      height: calc(100% - 22.1rem);
+      margin: 5.9rem 0rem 16.2rem 0rem;
+      width: 98.5rem;
+
+      .auto-group-9ljy-EYV {
+        align-items: center;
+        display: flex;
+        margin: 0rem 24.9rem 6.1rem 0rem;
+        width: calc(100% - 24.9rem);
+
+        .ellipse-1-wC1 {
+          background-color: rgba(27, 29, 76, 0.8999999762);
+          border-radius: 5.7rem;
+          flex-shrink: 0;
+          height: 11.4rem;
+          margin-right: 2.7rem;
+          width: 11.4rem;
+        }
+        .aigul--Rcy {
+          color: rgba(0, 0, 0, 0.6999999881);
+          flex-shrink: 0;
+          font-family: Inter, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.2102272034;
+          margin-top: 0.2rem;
+          max-width: 59.5rem;
+
+          .aigul--Rcy-sub-0 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.0875;
+          }
+          .aigul--Rcy-sub-1 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.0875;
+          }
+          .aigul--Rcy-sub-2 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.0875;
+          }
+        }
+      }
+      .item--GxM {
+        color: rgba(0, 0, 0, 0.6999999881);
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.6666666667;
+        margin: 0rem 0rem 5.4rem 0.1rem;
+        max-width: 98.4rem;
+      }
+      .auto-group-a5gz-uJV {
+        align-items: center;
+        background-color: rgba(27, 29, 76, 0.8999999762);
+        color: #f5f5f5;
+        display: flex;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 500;
+        height: 9.4rem;
+        justify-content: center;
+        line-height: 1.6666666667;
+        white-space: nowrap;
+        width: 58.1rem;
+      }
+    }
+  }
+}
+
+
+//
+
+<!-- portfolio -->
+
+.group-2-NdB {
+  height: 102.4rem;
+  width: 100%;
+
+  .wireframe-2-zPf {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 2.4rem;
+    position: relative;
+    width: 100%;
+
+    .auto-group-pycq-Mmw {
+      flex-shrink: 0;
+      height: 100%;
+      margin-right: 5.1rem;
+      position: relative;
+      width: 29.1rem;
+
+      .rectangle-1-FcR {
+        background-color: #1b1d4c;
+        height: 102.4rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 0;
+        width: 29rem;
+      }
+      .auto-group-u4eh-YbX {
+        border-top: solid 0.15rem #f5f5f5;
+        box-sizing: border-box;
+        height: 10.3rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 20.5rem;
+        width: 29rem;
+
+        .rectangle-3-TyP {
+          background-color: #323586;
+          height: 10.3rem;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 28.9rem;
+        }
+        .item--zTX {
+          color: #f5f5f5;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 500;
+          height: 2.2rem;
+          left: 1.6rem;
+          line-height: 1.0875;
+          position: absolute;
+          top: 4rem;
+          white-space: nowrap;
+          width: 19.9rem;
+        }
+      }
+      .line-2-xHs {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 30.9rem;
+        width: 29rem;
+      }
+      .line-3-GpM {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 41.3rem;
+        width: 29rem;
+      }
+      .item--DDo {
+        color: #f5f5f5;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        height: 2.2rem;
+        left: 1.7rem;
+        line-height: 1.0875;
+        position: absolute;
+        top: 34.9rem;
+        white-space: nowrap;
+        width: 19.7rem;
+      }
+      .line-4-5Wu {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0;
+        position: absolute;
+        top: 51.7rem;
+        width: 29rem;
+      }
+      .item--R4y {
+        color: #f5f5f5;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        height: 2.2rem;
+        left: 1.7rem;
+        line-height: 1.0875;
+        position: absolute;
+        top: 45.3rem;
+        white-space: nowrap;
+        width: 22.8rem;
+      }
+    }
+    .auto-group-8xnm-47w {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      height: calc(100% - 10.8rem);
+      margin: 5.1rem 0rem 5.7rem 0rem;
+      width: 107.5rem;
+
+      .auto-group-ahmf-YYu {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        padding-bottom: 0.1rem;
+        width: 100%;
+
+        .item--gf7 {
+          color: rgba(0, 0, 0, 0.6999999881);
+          flex-shrink: 0;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 1.0875;
+          margin-bottom: 4.3rem;
+          white-space: nowrap;
+        }
+        .auto-group-keny-zZK {
+          align-items: center;
+          display: flex;
+          flex-shrink: 0;
+
+          .item--9SD {
+            color: rgba(0, 0, 0, 0.6999999881);
+            flex-shrink: 0;
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.0875;
+            margin-right: 27.2rem;
+            white-space: nowrap;
+          }
+          .item--bSd {
+            color: rgba(0, 0, 0, 0.6999999881);
+            flex-shrink: 0;
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.0875;
+            margin-right: 22.8rem;
+            white-space: nowrap;
+          }
+          .item--Jbw {
+            color: rgba(0, 0, 0, 0.6999999881);
+            flex-shrink: 0;
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 2;
+            white-space: nowrap;
+          }
+        }
+      }
+      .auto-group-7xys-zjf {
+        align-items: flex-start;
+        display: flex;
+        flex-shrink: 0;
+        width: 100%;
+
+        .item--wuo {
+          color: rgba(0, 0, 0, 0.6999999881);
+          flex-shrink: 0;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.5;
+          margin: 0.5rem 3.1rem 0rem 0rem;
+          max-width: 34.8rem;
+        }
+        .item-207-509-3-205-105-1-205-205-312-23-31-3-274-2-3-113-105-14--A5j {
+          color: rgba(0, 0, 0, 0.6999999881);
+          flex-shrink: 0;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.5;
+          margin: 0.5rem 1rem 0rem 0rem;
+          max-width: 30.1rem;
+        }
+        .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d {
+          color: rgba(0, 0, 0, 0.6999999881);
+          flex-shrink: 0;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.5;
+          max-width: 38.5rem;
+
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-0 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-1 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-2 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-3 {
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-4 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-5 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-6 {
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-7 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-8 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-9 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-10 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-11 {
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-12 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-13 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-14 {
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-15 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-16 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-17 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-18 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-19 {
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-20 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-21 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-22 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-23 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-24 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-25 {
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-26 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-27 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-28 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-29 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-30 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-31 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-32 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-33 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-34 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+          }
+          .eltkachevagmailcom-312-51-26-40-sezim2008gmailcom-772-328960-3222-2-2965-kaparovajgmailcom-555-28-14-23-776-28-14-23-ene-nazmailru-776-380777-3222-5-56-08-ayalzat97mailru-550-23-13-29-3222-4-59-76-kjurok01gmailcom-773-84-34-61-bga6661mailru-700257890-35225-02-70-ngo-tendeshramblerru-557-48-47-13-3422-5-58-85-ayalzatmailru-777-39-30-77-kalybek2003mailru-3722-5-50-84-mnurakovamailru-03922-51091-553-835717-ayalzatdarikamailru-709-694550-altynai1951mailru-706383637-mairamisykkulgmailcom-702-223535-551-733-390-ulukmandarygergmailcom-F2d-sub-35 {
+            color: rgba(0, 0, 0, 0.6999999881);
+            font-family: Archivo, 'Source Sans Pro';
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.5;
+            text-decoration-line: underline;
+          }
+        }
+      }
+    }
+  }
+}
+ <!-- -->
+
+ .group-3-ykZ {
+  height: 102.4rem;
+  width: 100%;
+
+  .wireframe-4-Brd {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 2.7rem;
+    position: relative;
+    width: 100%;
+
+    .auto-group-bhyx-GdB {
+      flex-shrink: 0;
+      height: 100%;
+      margin-right: 4.8rem;
+      position: relative;
+      width: 29.1rem;
+
+      .rectangle-1-n5j {
+        background-color: #1b1d4c;
+        height: 102.4rem;
+        left: 0.1rem;
+        position: absolute;
+        top: 0;
+        width: 29rem;
+      }
+      .auto-group-duk1-ggu {
+        box-sizing: border-box;
+        height: 41.3rem;
+        left: 0;
+        padding: 20.5rem 0rem 4.2rem 0.1rem;
+        position: absolute;
+        top: 0;
+        width: 29.1rem;
+
+        .line-1-anH {
+          background-color: #f5f5f5;
+          height: 0.15rem;
+          margin-bottom: 3.85rem;
+          width: 100%;
+        }
+        .item--XBj {
+          color: #f5f5f5;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.0875;
+          margin: 0rem 0rem 4.2rem 1.6rem;
+          white-space: nowrap;
+        }
+        .line-2-LQ5 {
+          background-color: #f5f5f5;
+          height: 0.15rem;
+          margin-bottom: 3.85rem;
+          width: 100%;
+        }
+        .item--fSM {
+          color: #f5f5f5;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.0875;
+          margin-left: 1.6rem;
+          white-space: nowrap;
+        }
+      }
+      .auto-group-uobb-MKB {
+        border-top: solid 0.15rem #f5f5f5;
+        box-sizing: border-box;
+        height: 10.2rem;
+        left: 0;
+        position: absolute;
+        top: 41.3rem;
+        width: 29.1rem;
+
+        .rectangle-3-HTj {
+          background-color: #323586;
+          height: 10.2rem;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 29.1rem;
+        }
+        .item--pyT {
+          color: #f5f5f5;
+          font-family: Archivo, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 500;
+          height: 2.2rem;
+          left: 1.7rem;
+          line-height: 1.0875;
+          position: absolute;
+          top: 4rem;
+          white-space: nowrap;
+          width: 22.8rem;
+        }
+      }
+      .line-4-eSh {
+        background-color: #f5f5f5;
+        height: 0.15rem;
+        left: 0;
+        position: absolute;
+        top: 51.7rem;
+        width: 29rem;
+      }
+    }
+    .auto-group-rxtp-N7o {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      height: calc(100% - 9.6rem);
+      margin: 5.1rem 0rem 4.5rem 0rem;
+
+      .item--5nu {
+        color: rgba(0, 0, 0, 0.6999999881);
+        flex-shrink: 0;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.6666666667;
+        margin: 0rem 0rem 1.8rem 0.3rem;
+        white-space: nowrap;
+      }
+      .item--umw {
+        color: rgba(0, 0, 0, 0.6999999881);
+        flex-shrink: 0;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 1.5rem;
+        max-width: 104.3rem;
+      }
+      .whatsapp-0706-300075-n6y {
+        color: rgba(0, 0, 0, 0.6999999881);
+        flex-shrink: 0;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 1.5rem;
+        max-width: 64.2rem;
+      }
+      .item-111--oAV {
+        color: rgba(0, 0, 0, 0.6999999881);
+        flex-shrink: 0;
+        font-family: Archivo, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2;
+        max-width: 107.5rem;
+      }
+    }
+  }
+}
